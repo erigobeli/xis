@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="X – Home. Veja o que está acontecendo agora.">
+  <title>Home / X</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components/sidebar.css">
+  <link rel="stylesheet" href="css/components/feed.css">
+  <link rel="stylesheet" href="css/components/trending.css">
+  <link rel="stylesheet" href="css/components/modal.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z'/></svg>">
+</head>
+<body>
+
+  <div class="app-layout" id="home-page">
+
+    <!-- ==================== LEFT SIDEBAR ==================== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__inner">
+        <nav>
+          <!-- Logo -->
+          <a href="home.html" class="sidebar__logo" id="nav-logo">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+
+          <!-- Nav Links -->
+          <div class="sidebar__nav">
+            <a href="home.html" class="nav-link nav-link--active" id="nav-home">
+              <span class="nav-link__icon">
+                <svg viewBox="0 0 24 24"><path d="M21.591 7.146L12.52 1.157c-.316-.21-.724-.21-1.04 0l-9.071 5.99c-.26.169-.408.44-.408.729v12.874c0 .69.56 1.25 1.25 1.25h5.5c.69 0 1.25-.56 1.25-1.25v-5.5c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25v5.5c0 .69.56 1.25 1.25 1.25h5.5c.69 0 1.25-.56 1.25-1.25V7.875c0-.289-.147-.56-.409-.729z"/></svg>
+              </span>
+              <span>Home</span>
+            </a>
+            <a href="follow.html" class="nav-link" id="nav-follow">
+              <span class="nav-link__icon">
+                <svg viewBox="0 0 24 24"><path d="M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.328-1.658-.328-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm15.998.056L23.528 21H9.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977s6.816 2.358 7 8.977zM21.437 19c-.367-3.781-2.17-6.004-4.938-6.004s-4.57 2.223-4.938 6.004h9.875zm-4.938-9c-.799 0-1.527-.279-2.116-.73-.413-.317-.752-.712-1.003-1.166-.319-.579-.497-1.253-.497-1.971 0-2.313 1.688-4.133 3.616-4.133s3.616 1.82 3.616 4.133c0 .718-.179 1.392-.498 1.971-.251.454-.59.849-1.003 1.166-.588.451-1.316.73-2.115.73zM16.5 3c-1.105 0-2.616 1.094-2.616 3.133 0 1.779 1.26 2.867 2.616 2.867s2.616-1.088 2.616-2.867C19.116 4.094 17.605 3 16.5 3zM7.5 11C5.57 11 4 9.433 4 7.5S5.57 4 7.5 4 11 5.567 11 7.5 9.43 11 7.5 11zm0-6C6.12 5 5 6.12 5 7.5S6.12 10 7.5 10 10 8.88 10 7.5 8.88 5 7.5 5z"/></svg>
+              </span>
+              <span>Follow</span>
+            </a>
+            <a href="profile.html" class="nav-link" id="nav-profile">
+              <span class="nav-link__icon">
+                <svg viewBox="0 0 24 24"><path d="M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z"/></svg>
+              </span>
+              <span>Profile</span>
+            </a>
+          </div>
+
+          <!-- Post Button -->
+          <button class="sidebar__post-btn" id="btn-open-post-modal">Post</button>
+        </nav>
+
+        <!-- User Info -->
+        <div class="sidebar__user" id="sidebar-user">
+          <div class="sidebar__user-avatar">
+            <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_bigger.png" alt="Avatar">
+          </div>
+          <div class="sidebar__user-info">
+            <span class="sidebar__user-name">Kernel</span>
+            <span class="sidebar__user-handle">@aikernel</span>
+          </div>
+          <span class="sidebar__user-more">
+            <svg viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+          </span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ==================== MAIN FEED ==================== -->
+    <main class="main-feed" id="main-feed">
+
+      <!-- Feed Header (Tabs) -->
+      <header class="feed-header" id="feed-header">
+        <div class="feed-header__tabs">
+          <button class="feed-header__tab feed-header__tab--active" id="tab-for-you">For you</button>
+          <button class="feed-header__tab" id="tab-following">Following</button>
+        </div>
+      </header>
+
+      <!-- Tweet Composer -->
+      <div class="tweet-composer" id="tweet-composer">
+        <div class="tweet-composer__avatar">
+          <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_bigger.png" alt="Your avatar">
+        </div>
+        <div class="tweet-composer__body">
+          <textarea class="tweet-composer__input" placeholder="What's happening?" rows="1" id="composer-input"></textarea>
+          <div class="tweet-composer__actions">
+            <div class="tweet-composer__tools">
+              <button class="tweet-composer__tool-btn" title="Media" id="composer-tool-media">
+                <svg viewBox="0 0 24 24"><path d="M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v9.086l3-3 3 3 5-5 3 3V5.5c0-.276-.224-.5-.5-.5h-13zM19 15.414l-3-3-5 5-3-3-3 3V18.5c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-3.086zM9.75 7C8.784 7 8 7.784 8 8.75s.784 1.75 1.75 1.75 1.75-.784 1.75-1.75S10.716 7 9.75 7z"/></svg>
+              </button>
+            </div>
+            <button class="tweet-composer__submit-btn" id="composer-submit">Post</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tweet Feed -->
+      <section id="tweet-feed">
+
+        <!-- Tweet 1: Samsung Ad -->
+        <article class="tweet-card" id="tweet-1">
+          <div class="tweet-card__avatar">
+            <img src="https://pbs.twimg.com/profile_images/1596938498498125824/a9_cNEnS_normal.jpg" alt="Samsung Brasil avatar">
+          </div>
+          <div class="tweet-card__body">
+            <div class="tweet-card__header">
+              <span class="tweet-card__name">Samsung Brasil</span>
+              <span class="tweet-card__verified">
+                <svg viewBox="0 0 22 22"><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.855-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.053-.88 1.687-.131.633-.084 1.29.139 1.896-.454.18-.843.46-1.168.82-.327.36-.572.79-.72 1.263-.148.473-.197.97-.148 1.46.05.49.195.964.43 1.39.236.427.56.793.95 1.076-.327.652-.476 1.387-.432 2.12.044.734.282 1.44.688 2.04.406.6.96 1.074 1.606 1.373.645.3 1.36.413 2.067.331.404.614.94 1.11 1.565 1.444.624.333 1.32.5 2.022.483.702-.016 1.39-.2 2-.534.61-.334 1.126-.843 1.512-1.467.694.076 1.397-.05 2.028-.358.63-.31 1.17-.79 1.562-1.39.392-.6.618-1.3.655-2.025.037-.725-.117-1.447-.447-2.09.39-.282.716-.65.955-1.078.238-.428.384-.903.435-1.395.05-.492 0-.99-.145-1.466-.147-.475-.39-.907-.715-1.27-.325-.363-.713-.645-1.165-.828zm-8.37 6.18L7.3 12.456l1.415-1.413 3.31 3.31 5.573-5.572L19.013 10.2l-6.988 6.98z"/></svg>
+              </span>
+              <span class="tweet-card__handle">@SamsungBrasil</span>
+              <span class="tweet-card__label">Ad</span>
+              <button class="tweet-card__more" aria-label="More options">
+                <svg viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+              </button>
+            </div>
+            <p class="tweet-card__text">É oficial: o novo Galaxy S26 Ultra chegou! ✨ Não perca a chance de garantir a melhor câmera Galaxy e recursos de IA surpreendentes. Acesse...
+              <span class="show-more">Show more</span>
+            </p>
+            <div class="tweet-card__media">
+              <img src="https://pbs.twimg.com/amplify_video_thumb/1899598050782564353/img/R9cbCxTjujK3P7Ic.jpg" alt="Galaxy S26 Ultra promo">
+            </div>
+            <span class="tweet-card__media-source">From samsung.com</span>
+            <div class="tweet-card__stats">
+              <button class="tweet-stat tweet-stat--reply" id="tweet-1-reply">
+                <span class="tweet-stat__icon">
+                  <svg viewBox="0 0 24 24"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"/></svg>
+                </span>
+                <span>15</span>
+              </button>
+              <button class="tweet-stat tweet-stat--retweet" id="tweet-1-retweet">
+                <span class="tweet-stat__icon">
+                  <svg viewBox="0 0 24 24"><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"/></svg>
+                </span>
+                <span>14</span>
+              </button>
+              <button class="tweet-stat tweet-stat--like" id="tweet-1-like">
+                <span class="tweet-stat__icon">
+                  <svg viewBox="0 0 24 24"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"/></svg>
+                </span>
+                <span>513</span>
+              </button>
+              <button class="tweet-stat tweet-stat--view" id="tweet-1-view">
+                <span class="tweet-stat__icon">
+                  <svg viewBox="0 0 24 24"><path d="M8.75 21V3h2v18h-2zM18.75 21V8.5h2V21h-2zM13.75 21v-9h2v9h-2zM3.75 21v-4h2v4h-2z"/></svg>
+                </span>
+                <span>2.6M</span>
+              </button>
+              <span style="display:flex; gap:4px;">
+                <button class="tweet-stat tweet-stat--bookmark" id="tweet-1-bookmark">
+                  <span class="tweet-stat__icon">
+                    <svg viewBox="0 0 24 24"><path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"/></svg>
+                  </span>
+                </button>
+                <button class="tweet-stat tweet-stat--share" id="tweet-1-share">
+                  <span class="tweet-stat__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"/></svg>
+                  </span>
+                </button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tweet 2: Elon Musk -->
+        <article class="tweet-card" id="tweet-2">
+          <div class="tweet-card__avatar">
+            <img src="https://pbs.twimg.com/profile_images/1845482317183168512/KHgIf0ds_normal.jpg" alt="Elon Musk avatar">
+          </div>
+          <div class="tweet-card__body">
+            <div class="tweet-card__header">
+              <span class="tweet-card__name">Elon Musk</span>
+              <span class="tweet-card__verified">
+                <svg viewBox="0 0 22 22"><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.855-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.053-.88 1.687-.131.633-.084 1.29.139 1.896-.454.18-.843.46-1.168.82-.327.36-.572.79-.72 1.263-.148.473-.197.97-.148 1.46.05.49.195.964.43 1.39.236.427.56.793.95 1.076-.327.652-.476 1.387-.432 2.12.044.734.282 1.44.688 2.04.406.6.96 1.074 1.606 1.373.645.3 1.36.413 2.067.331.404.614.94 1.11 1.565 1.444.624.333 1.32.5 2.022.483.702-.016 1.39-.2 2-.534.61-.334 1.126-.843 1.512-1.467.694.076 1.397-.05 2.028-.358.63-.31 1.17-.79 1.562-1.39.392-.6.618-1.3.655-2.025.037-.725-.117-1.447-.447-2.09.39-.282.716-.65.955-1.078.238-.428.384-.903.435-1.395.05-.492 0-.99-.145-1.466-.147-.475-.39-.907-.715-1.27-.325-.363-.713-.645-1.165-.828zm-8.37 6.18L7.3 12.456l1.415-1.413 3.31 3.31 5.573-5.572L19.013 10.2l-6.988 6.98z"/></svg>
+              </span>
+              <!-- X badge -->
+              <span class="tweet-card__verified" style="margin-left:-2px;">
+                <svg viewBox="0 0 24 24" style="width:16px;height:16px;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </span>
+              <span class="tweet-card__handle">@elonmusk</span>
+              <span class="tweet-card__dot">·</span>
+              <span class="tweet-card__date">Mar 11</span>
+              <button class="tweet-card__more" aria-label="More options">
+                <svg viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+              </button>
+            </div>
+            <p class="tweet-card__text">Grok Imagine in a pond for 30 secs</p>
+            <div class="tweet-card__media">
+              <img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=600&h=400&fit=crop" alt="Pond with water lilies">
+            </div>
+            <span class="tweet-card__media-source" style="color:var(--color-accent);">Create your own with Grok</span>
+            <div class="tweet-card__stats">
+              <button class="tweet-stat tweet-stat--reply">
+                <span class="tweet-stat__icon">
+                  <svg viewBox="0 0 24 24"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"/></svg>
+                </span>
+                <span>2.4K</span>
+              </button>
+              <button class="tweet-stat tweet-stat--retweet">
+                <span class="tweet-stat__icon">
+                  <svg viewBox="0 0 24 24"><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"/></svg>
+                </span>
+                <span>5.1K</span>
+              </button>
+              <button class="tweet-stat tweet-stat--like">
+                <span class="tweet-stat__icon">
+                  <svg viewBox="0 0 24 24"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"/></svg>
+                </span>
+                <span>32K</span>
+              </button>
+              <button class="tweet-stat tweet-stat--view">
+                <span class="tweet-stat__icon">
+                  <svg viewBox="0 0 24 24"><path d="M8.75 21V3h2v18h-2zM18.75 21V8.5h2V21h-2zM13.75 21v-9h2v9h-2zM3.75 21v-4h2v4h-2z"/></svg>
+                </span>
+                <span>18.5M</span>
+              </button>
+              <span style="display:flex; gap:4px;">
+                <button class="tweet-stat tweet-stat--bookmark">
+                  <span class="tweet-stat__icon">
+                    <svg viewBox="0 0 24 24"><path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"/></svg>
+                  </span>
+                </button>
+                <button class="tweet-stat tweet-stat--share">
+                  <span class="tweet-stat__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"/></svg>
+                  </span>
+                </button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tweet 3: Kernel -->
+        <article class="tweet-card" id="tweet-3">
+          <div class="tweet-card__avatar">
+            <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_bigger.png" alt="Kernel avatar">
+          </div>
+          <div class="tweet-card__body">
+            <div class="tweet-card__header">
+              <span class="tweet-card__name">Kernel</span>
+              <span class="tweet-card__handle">@aikernel</span>
+              <span class="tweet-card__dot">·</span>
+              <span class="tweet-card__date">Mar 12</span>
+              <button class="tweet-card__more" aria-label="More options">
+                <svg viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+              </button>
+            </div>
+            <p class="tweet-card__text">Just testing out this new X clone interface! Looks pretty clean so far. 🚀</p>
+            <div class="tweet-card__stats">
+              <button class="tweet-stat tweet-stat--reply">
+                <span class="tweet-stat__icon">
+                  <svg viewBox="0 0 24 24"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"/></svg>
+                </span>
+                <span>2</span>
+              </button>
+              <button class="tweet-stat tweet-stat--retweet">
+                <span class="tweet-stat__icon">
+                  <svg viewBox="0 0 24 24"><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"/></svg>
+                </span>
+                <span>1</span>
+              </button>
+              <button class="tweet-stat tweet-stat--like">
+                <span class="tweet-stat__icon">
+                  <svg viewBox="0 0 24 24"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"/></svg>
+                </span>
+                <span>8</span>
+              </button>
+              <button class="tweet-stat tweet-stat--view">
+                <span class="tweet-stat__icon">
+                  <svg viewBox="0 0 24 24"><path d="M8.75 21V3h2v18h-2zM18.75 21V8.5h2V21h-2zM13.75 21v-9h2v9h-2zM3.75 21v-4h2v4h-2z"/></svg>
+                </span>
+                <span>124</span>
+              </button>
+              <span style="display:flex; gap:4px;">
+                <button class="tweet-stat tweet-stat--bookmark">
+                  <span class="tweet-stat__icon">
+                    <svg viewBox="0 0 24 24"><path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"/></svg>
+                  </span>
+                </button>
+                <button class="tweet-stat tweet-stat--share">
+                  <span class="tweet-stat__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"/></svg>
+                  </span>
+                </button>
+              </span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+    </main>
+
+    <!-- ==================== RIGHT SIDEBAR (TRENDING) ==================== -->
+    <aside class="trending-sidebar" id="trending-sidebar">
+
+      <!-- Search -->
+      <div class="search-bar" id="search-bar">
+        <div class="search-bar__wrapper">
+          <span class="search-bar__icon">
+            <svg viewBox="0 0 24 24"><path d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"/></svg>
+          </span>
+          <input type="text" class="search-bar__input" placeholder="Search" id="search-input">
+        </div>
+      </div>
+
+      <!-- Trending Box -->
+      <div class="trending-box" id="trending-box">
+        <h2 class="trending-box__title">What's happening</h2>
+
+        <!-- Trending 1 -->
+        <div class="trending-item" id="trending-1">
+          <div>
+            <span class="trending-item__category">Galaxy S26 Ultra</span>
+            <p class="trending-item__label">Nova tela de privacidade</p>
+            <span class="trending-item__promoted">
+              <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:var(--color-text-secondary);"><path d="M19.498 3h-15c-1.381 0-2.5 1.12-2.5 2.5v13c0 1.38 1.119 2.5 2.5 2.5h15c1.381 0 2.5-1.12 2.5-2.5v-13c0-1.38-1.119-2.5-2.5-2.5zm-3.502 12h-2v-3.59l-5.293 5.3-1.414-1.42L12.581 10H8.998V8h7.998v7z"/></svg>
+              Promoted by Samsung Brasil
+            </span>
+          </div>
+          <button class="trending-item__more" aria-label="More">
+            <svg viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+          </button>
+        </div>
+
+        <!-- Trending 2 -->
+        <div class="trending-item" id="trending-2">
+          <div>
+            <span class="trending-item__category">Music · Trending</span>
+            <p class="trending-item__label">#엔하이픈은_7명이다</p>
+          </div>
+          <button class="trending-item__more" aria-label="More">
+            <svg viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+          </button>
+        </div>
+
+        <!-- Trending 3 -->
+        <div class="trending-item" id="trending-3">
+          <div>
+            <span class="trending-item__category">Music · Trending</span>
+            <p class="trending-item__label">#BTS_SWIM</p>
+          </div>
+          <button class="trending-item__more" aria-label="More">
+            <svg viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+          </button>
+        </div>
+
+        <!-- Trending 4 -->
+        <div class="trending-item" id="trending-4">
+          <div>
+            <span class="trending-item__category">ENHYPEN · Trending</span>
+            <p class="trending-item__label">#enhypen_home</p>
+          </div>
+          <button class="trending-item__more" aria-label="More">
+            <svg viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+          </button>
+        </div>
+
+        <a href="#" class="trending-box__show-more" id="trending-show-more">Show more</a>
+      </div>
+
+      <!-- Footer -->
+      <footer class="trending-footer" id="trending-footer">
+        <a href="#">Terms of Service</a>
+        <span class="trending-footer__separator">|</span>
+        <a href="#">Privacy Policy</a>
+        <span class="trending-footer__separator">|</span>
+        <a href="#">Cookie Policy</a>
+        <span class="trending-footer__separator">|</span>
+        <a href="#">Accessibility</a>
+        <span class="trending-footer__separator">|</span>
+        <a href="#">Ads Info</a>
+        <span class="trending-footer__separator">|</span>
+        <a href="#">More ···</a>
+        <span class="trending-footer__separator">|</span>
+        <span>© 2026 X Corp.</span>
+      </footer>
+    </aside>
+  </div>
+
+  <!-- ==================== POST MODAL ==================== -->
+  <div class="modal-overlay" id="post-modal">
+    <div class="modal" id="modal-dialog">
+      <div class="modal__header">
+        <button class="modal__close-btn" id="modal-close">
+          <svg viewBox="0 0 24 24"><path d="M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z"/></svg>
+        </button>
+        <button class="modal__drafts-btn" id="modal-drafts">Drafts</button>
+      </div>
+      <div class="modal__body">
+        <div class="modal__composer">
+          <div class="modal__composer-avatar">
+            <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_bigger.png" alt="Your avatar">
+          </div>
+          <textarea class="modal__composer-input" placeholder="What's happening?" id="modal-composer-input"></textarea>
+        </div>
+        <div class="modal__reply-permission">
+          <svg viewBox="0 0 24 24"><path d="M12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-.25 10.48L10.5 17.5l-2-1.5 1.75-7.75 4.25 2z"/></svg>
+          <span>Everyone can reply</span>
+        </div>
+      </div>
+      <div class="modal__footer">
+        <div class="modal__toolbar">
+          <button class="modal__tool-btn" title="Media">
+            <svg viewBox="0 0 24 24"><path d="M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v9.086l3-3 3 3 5-5 3 3V5.5c0-.276-.224-.5-.5-.5h-13zM19 15.414l-3-3-5 5-3-3-3 3V18.5c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-3.086zM9.75 7C8.784 7 8 7.784 8 8.75s.784 1.75 1.75 1.75 1.75-.784 1.75-1.75S10.716 7 9.75 7z"/></svg>
+          </button>
+          <button class="modal__tool-btn" title="GIF">
+            <svg viewBox="0 0 24 24"><path d="M3 5.5C3 4.119 4.12 3 5.5 3h13C19.88 3 21 4.119 21 5.5v13c0 1.381-1.12 2.5-2.5 2.5h-13C4.12 21 3 19.881 3 18.5v-13zM5.5 5c-.28 0-.5.224-.5.5v13c0 .276.22.5.5.5h13c.28 0 .5-.224.5-.5v-13c0-.276-.22-.5-.5-.5h-13zM18 10.711V9.25h-3.74v5.5h1.44v-1.719h1.7V11.57h-1.7v-.859H18zM11.79 9.25h1.44v5.5h-1.44v-5.5zm-3.07 1.375c.34 0 .77.172 1.02.43l1.03-.86c-.51-.601-1.28-.945-2.05-.945C7.19 9.25 6 10.453 6 12s1.19 2.75 2.72 2.75c.85 0 1.54-.344 2.05-.945v-2.149H8.38v1.032h1.01v.515c-.17.109-.39.172-.66.172-.86 0-1.35-.688-1.35-1.375s.49-1.375 1.34-1.375z"/></svg>
+          </button>
+          <button class="modal__tool-btn" title="Grok">
+            <svg viewBox="0 0 24 24"><path d="M3.32 12l-.01-.02L9.4 2.5h2.53L5.86 12l6.07 9.5H9.4L3.32 12zM21.18 12l-6.07-9.5h-2.53L18.65 12l-6.07 9.5h2.53l6.07-9.5z"/></svg>
+          </button>
+          <button class="modal__tool-btn" title="Poll">
+            <svg viewBox="0 0 24 24"><path d="M6 5c-1.1 0-2 .895-2 2s.9 2 2 2 2-.895 2-2-.9-2-2-2zM2 7c0-2.209 1.79-4 4-4s4 1.791 4 4-1.79 4-4 4-4-1.791-4-4zm20 1H12V6h10v2zM6 15c-1.1 0-2 .895-2 2s.9 2 2 2 2-.895 2-2-.9-2-2-2zm-4 2c0-2.209 1.79-4 4-4s4 1.791 4 4-1.79 4-4 4-4-1.791-4-4zm20 1H12v-2h10v2z"/></svg>
+          </button>
+          <button class="modal__tool-btn" title="Emoji">
+            <svg viewBox="0 0 24 24"><path d="M8 9.5C8 8.119 8.672 7 9.5 7S11 8.119 11 9.5 10.328 12 9.5 12 8 10.881 8 9.5zm6.5 2.5c.828 0 1.5-1.119 1.5-2.5S15.328 7 14.5 7 13 8.119 13 9.5s.672 2.5 1.5 2.5zM12 16c-2.224 0-3.021-2.227-3.051-2.316l-1.897.633c.05.15 1.271 3.684 4.949 3.684s4.898-3.533 4.949-3.684l-1.896-.638c-.033.095-.83 2.322-3.054 2.322zm10.25-4.001c0 5.652-4.598 10.25-10.25 10.25S1.75 17.652 1.75 12 6.348 1.75 12 1.75 22.25 6.348 22.25 12zm-2 0c0-4.549-3.701-8.25-8.25-8.25S3.75 7.451 3.75 12s3.701 8.25 8.25 8.25 8.25-3.701 8.25-8.25z"/></svg>
+          </button>
+          <button class="modal__tool-btn" title="Schedule">
+            <svg viewBox="0 0 24 24"><path d="M6 3V2h2v1h6V2h2v1h1.5C18.88 3 20 4.119 20 5.5v13c0 1.381-1.12 2.5-2.5 2.5h-11C5.12 21 4 19.881 4 18.5v-13C4 4.119 5.12 3 6.5 3H6zm0 2h-.5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h11c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5H16v1h-2V5H8v1H6V5zm1 6h4v4H7v-4z"/></svg>
+          </button>
+          <button class="modal__tool-btn" title="Location">
+            <svg viewBox="0 0 24 24"><path d="M12 7c-1.93 0-3.5 1.57-3.5 3.5S10.07 14 12 14s3.5-1.57 3.5-3.5S13.93 7 12 7zm0 5c-.827 0-1.5-.673-1.5-1.5S11.173 9 12 9s1.5.673 1.5 1.5S12.827 12 12 12zm0-10c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 17.77c-1.665-1.241-6.5-5.196-6.5-9.27C5.5 6.916 8.416 4 12 4s6.5 2.916 6.5 6.5c0 4.073-4.835 8.028-6.5 9.27z"/></svg>
+          </button>
+        </div>
+        <button class="modal__submit-btn" id="modal-submit">Post</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Minimal toggle for the post modal -->
+  <script>
+    (function() {
+      var modal = document.getElementById('post-modal');
+      var openBtn = document.getElementById('btn-open-post-modal');
+      var closeBtn = document.getElementById('modal-close');
+
+      function openModal() {
+        modal.classList.add('modal-overlay--visible');
+      }
+
+      function closeModal() {
+        modal.classList.remove('modal-overlay--visible');
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+      // Close when clicking the overlay background (not the modal box itself)
+      if (modal) {
+        modal.addEventListener('click', function(e) {
+          if (e.target === modal) closeModal();
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>
