@@ -20,6 +20,13 @@ const trendingItems = [
     href: 'https://youtu.be/wbkhrHKeHnQ',
     thumbnail: 'https://img.youtube.com/vi/wbkhrHKeHnQ/hqdefault.jpg',
   },
+  {
+    category: 'YouTube',
+    label: 'Claude Cowork',
+    promoted: 'Eli Rigobeli',
+    href: 'https://youtu.be/SiIczzJk6B0',
+    thumbnail: 'https://img.youtube.com/vi/SiIczzJk6B0/hqdefault.jpg',
+  },
 ]
 
 export default function TrendingSidebar() {
