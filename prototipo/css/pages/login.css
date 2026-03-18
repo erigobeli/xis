@@ -1,0 +1,94 @@
+/* ========================================
+   PAGE — Login
+   ======================================== */
+
+.login-page {
+  min-height: 100vh;
+}
+
+.login-logo svg {
+  width: 350px;
+  height: 350px;
+  fill: var(--color-text-black);
+}
+
+.login-content__title {
+  font-size: var(--font-size-hero);
+  font-weight: var(--font-weight-extrabold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-3xl);
+  color: var(--color-text-black);
+}
+
+.login-content__subtitle {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-extrabold);
+  margin-bottom: var(--space-2xl);
+  color: var(--color-text-black);
+}
+
+.login-content__create-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  padding: var(--space-md) 0;
+  background-color: var(--color-text-black);
+  color: var(--color-text-white);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--radius-full);
+  transition: opacity var(--transition-fast);
+}
+
+.login-content__create-btn:hover {
+  opacity: 0.85;
+}
+
+.login-content__terms {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-xs);
+  max-width: 300px;
+  line-height: var(--line-height-relaxed);
+}
+
+.login-content__terms a {
+  color: var(--color-accent);
+}
+
+.login-content__terms a:hover {
+  text-decoration: underline;
+}
+
+.login-content__login-section {
+  margin-top: var(--space-3xl);
+}
+
+.login-content__login-label {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-lg);
+  color: var(--color-text-black);
+}
+
+.login-content__login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  padding: var(--space-md) 0;
+  background-color: transparent;
+  color: var(--color-accent);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  border: var(--border-width) solid var(--color-border-light);
+  border-radius: var(--radius-full);
+  transition: background-color var(--transition-fast);
+}
+
+.login-content__login-btn:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
